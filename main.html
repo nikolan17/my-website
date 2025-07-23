@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOGE Social Security Calculator</title>
+  <style>
+    body {
+      background-color: #262B36;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .calculator-container {
+      background-color: #262B36;
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 30px 30px;
+      max-width: 430px;
+      width: 100%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      color: white;
+      transition: transform 0.2s ease;
+    }
+
+    .calculator-container:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      color: gold;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: #1f2430;
+      color: white;
+      transition: border 0.3s;
+    }
+
+    input[type="number"]::placeholder {
+      color: #ccc;
+    }
+
+    input[type="number"]:focus {
+      border-color: #ffcc00;
+      outline: none;
+    }
+
+    .package-options label {
+      display: block;
+      background-color: #1f2430;
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 12px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .package-options label:hover {
+      background-color: #2e3545;
+      transform: scale(1.02);
+    }
+
+    .package-options input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    button {
+      background-color: #262B36;
+      color: gold;
+      border: 2px solid gold;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: gold;
+      color: #262B36;
+      transform: scale(1.03);
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 18px;
+      color: white;
+    }
+
+    html, body {
+  overflow: hidden;
+}
+    
+  </style>
+</head>
+<body>
+
+<div class="calculator-container">
+  <h2>DOGE Social Security Calculator</h2>
+  <p>Enter your total DOGE cash-out product value ($):</p>
+
+  <input id="trbInput" type="number" placeholder="e.g. 11021334" />
+
+  <p style="margin-top: 20px;">Select your offer:</p>
+  <div class="package-options">
+    <label><input type="radio" name="offer" value="0.3" checked /> Patriot Entry (30%)</label>
+    <label><input type="radio" name="offer" value="0.6" /> Founding Supporter (60%)</label>
+    <label><input type="radio" name="offer" value="1.0" /> <strong> Lifetime Elite (100%)</strong></label>
+  </div>
+
+  <button onclick="calculateSocial()">Calculate</button>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function calculateSocial() {
+  const input = parseFloat(document.getElementById("trbInput").value);
+  const offerElement = document.querySelector('input[name="offer"]:checked');
+  const offer = parseFloat(offerElement.value);
+  const labelText = offerElement.parentElement.innerText;
+
+  const resultDiv = document.getElementById("result");
+
+  if (isNaN(input) || input <= 0) {
+    resultDiv.innerHTML = "⚠️ Please enter a valid amount.";
+    return;
+  }
+
+  // Apply offer percentage and divide into 12 months
+  const totalBonus = input * offer;
+  const monthlyBonus = totalBonus / 12;
+
+  resultDiv.innerHTML =
+    `📦 You selected the <strong>${labelText.trim()}</strong> package.<br><br>` +
+    `💰 Estimated monthly DOGE Social Security benefit:<br>` +
+    `<strong>$${monthlyBonus.toLocaleString(undefined, { minimumFractionDigits: 2 })} / month</strong><br>` +
+    `📅 Total over 12 months: <strong>$${totalBonus.toLocaleString(undefined, { minimumFractionDigits: 2 })}</strong>`;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Open Graph / Facebook -->
+    <meta name="fragment" content="!">
+<meta property="og:url" content="https://doge-funds.com/eligibility/?ref=defaultref">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Department of Government Efficiency (DOGE)">
+<meta property="og:description" content="Empowering communities with fast, transparent direct financial relief. Learn more about our mission and impact.">
+<meta property="og:image" content="https://doge-funds.com/assets/doge.webp">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Department of Government Efficiency (DOGE)">
+<meta name="twitter:description" content="Delivering fast, transparent financial relief directly to communities.">
+<meta name="twitter:image" content="https://doge-funds.com/assets/doge.webp">
+<meta name="twitter:image:alt" content="DOGE Logo – Department of Government Efficiency">
+<link rel="icon" type="image/png" href="https://doge-funds.com/assets/doge.webp">
+    <meta charset="UTF-8">
+    <title>Stimulus Checks | DOGE: Department of Government Efficiency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" as="image" href="https://doge-funds.com/public/check-25.05.webp">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
+<link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SHNL8Q6NDY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SHNL8Q6NDY');
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .calculator-container {
+        margin:auto;
+        margin-top: 60px;
+        margin-bottom: 60px;;
+        background-color: #1f2430;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 30px 30px;
+        max-width: 430px;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        color: white;
+        transition: transform 0.2s ease;
+    }
+
+    .calculator-container:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      color: gold;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: #1f2430;
+      color: white;
+      transition: border 0.3s;
+    }
+
+    input[type="number"]::placeholder {
+      color: #ccc;
+    }
+
+    input[type="number"]:focus {
+      border-color: #ffcc00;
+      outline: none;
+    }
+
+    .package-options label {
+      display: block;
+      background-color: #1f2430;
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 12px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .package-options label:hover {
+      background-color: #2e3545;
+      transform: scale(1.02);
+    }
+
+    .package-options input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    button {
+      background-color: #262B36;
+      color: gold;
+      border: 2px solid gold;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: gold;
+      color: #262B36;
+      transform: scale(1.03);
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 18px;
+      color: white;
+    }
+
+    
+      .video-title {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: white;
+        margin: 32px 0 12px 0;
+        padding-top: 20px;
+        letter-spacing: 0.01em;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      }
+      .header-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: padding 0.2s ease;
+}
+
+
+@media (min-width: 768px) {
+  .header-inner {
+    padding-left: 60px;
+  }
+}
+
+      html, body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background: #10131a;
+        color: #f5f6fa;
+        font-family: 'Inter', Arial, sans-serif;
+        width: 100%;
+        min-height: 100%;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+    
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #181c27;
+        border-bottom: 2px solid #ffd700;
+        position: relative;
+        top: 0;
+        z-index: 100;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 18px 0 12px 0;
+      }
+      /* Force Vapi widget button to always be sticky/fixed in the viewport */
+.vapi-widget-button, [class*="vapi-widget-button"] {
+  position: sticky !important;
+  bottom: 32px !important;   /* or your preferred offset */
+  right: 32px !important;    /* or your preferred offset */
+  z-index: 9999 !important;
+  box-shadow: 0 4px 24px #ffd70099 !important;
+}
+#vapi-support-btn {
+  /* Example: floating/fixed in bottom right */
+  position: fixed !important;
+  bottom: 32px !important;
+  right: 32px !important;
+  z-index: 9999 !important;
+  background: #FFD700 !important; /* DOGE gold */
+  color: #181c27 !important;      /* dark text */
+  box-shadow: 0 4px 24px #ffd70099 !important;
+  border-radius: 32px !important;
+  font-weight: 700 !important;
+}
+      .logo-border {
+        position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+      }
+      .logo-border::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px; /* Set the border height here */
+  border-right: 2px solid #63656C;
+}
+      .logo {
+        width: 50px;
+        height: auto;
+        justify-self: center;
+        margin-bottom: 8px;
+      }
+      .header-info {
+        text-align: center;
+        padding: 0 20px;
+      }
+      .header-title {
+        padding-left: 10px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-align: left;
+        order: 2;
+        margin-bottom: 4px;
+      }
+      .header-sub {
+        padding-left: 10px;
+        font-size: 0.9rem;
+        color: #b0b3c6;
+        text-align: left;
+        order: 3;
+      }
+      .chart-section .package-card {
+        background: #23263a !important;
+        box-shadow: 0 4px 24px rgba(255, 215, 0, 0.10), 0 1.5px 8px 0 rgba(0,0,0,0.12) !important;
+        transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+      }
+      .chart-section .package-card:hover {
+        background: #282c3f !important;
+        box-shadow: 0 8px 40px 0 rgba(255,215,0,0.18), 0 1.5px 8px 0 rgba(0,0,0,0.18) !important;
+      }
+      .video-placeholder {
+        display: flex;
+        justify-content: center;
+        margin: 40px 32px 32px 0;
+        transition: box-shadow 0.2s, transform 0.2s;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .video-placeholder iframe {
+        display: block;
+        border-radius: 12px;
+        box-shadow: none;
+        transition: box-shadow 0.2s, transform 0.2s;
+        background: #000;
+      }
+      .video-placeholder:hover, .video-placeholder:focus-within {
+        box-shadow: 0 8px 40px 0 rgba(162, 89, 255, 0.25), 0 1.5px 8px 0 rgba(0,0,0,0.18);
+        transform: scale(1.015);
+      }
+      .video-placeholder:hover iframe, .video-placeholder:focus-within iframe {
+        box-shadow: 0 4px 32px 0 rgba(162, 89, 255, 0.18);
+        transform: scale(1.01);
+      }
+      .hero {
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 10px;
+        padding: 48px 0 24px 0;
+        background: linear-gradient(180deg, #181c27 60%, #10131a 100%);
+        border-bottom: 1px solid #23263a;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #ffd700;
+        margin-bottom: 16px;
+        letter-spacing: -1px;
+      }
+      .hero-subtitle {
+        font-size: 1.1rem;
+        color: #b0b3c6;
+        max-width: 700px;
+        margin: 0 auto 32px auto;
+      }
+      .cta-btn, .collapsible-btn {
+        background: #ffd700;
+        color: #181c27;
+        border: none;
+        border-radius: 24px;
+        padding: 12px 28px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 16px rgba(255, 255, 255, 0.1);
+        transition: background 0.2s, color 0.2s, transform 0.2s;
+        margin: 0 8px 16px 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .cta-btn:hover, .collapsible-btn:hover {
+        background: #FFD602;
+        color: #fff;
+        transform: scale(1.05);
+      }
+      .collapsible-btn .chevron {
+        margin-left: 12px;
+        transition: transform 0.3s;
+        font-size: 1.1em;
+        vertical-align: middle;
+      }
+      .collapsible-btn .chevron.rotated {
+        transform: rotate(180deg);
+      }
+      .collapsible-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s;
+        margin: 0 auto;
+        max-width: 800px;
+        background: rgba(24, 28, 39, 0.92);
+        border-radius: 12px;
+        box-shadow: 0 2px 16px #000a;
+        padding: 0 16px;
+      }
+      .collapsible-content.expanded {
+        max-height: 500px;
+        padding: 24px 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      .collapsible-content .description {
+        color: #ffd700;
+        font-size: 1.08rem;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #23263a;
+        margin: 32px 0 32px 0;
+      }
+      .packages-section {
+        margin: 0 auto 32px auto;
+        padding: 0;
+        width: 100%;
+      }
+      .packages-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffd700;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .packages-subtitle {
+        color: #b0b3c6;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      @media (min-width: 768px) {
+  #tabs-bottom {
+    display: none !important;
+  }
+}
+      .packages-grid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 16px;
+        width: 100%;
+      }
+      .package-card {
+        background: #1a1e2a;
+        border-radius: 14px;
+        padding: 20px 16px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+        text-align: center;
+        transition: box-shadow 0.2s, transform 0.2s;
+        cursor: pointer;
+        border: 2px solid transparent;
+        min-width: 180px;
+        max-width: 300px;
+        flex: 1 1 220px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+      }
+      .package-card:hover {
+        box-shadow: 0 4px 32px rgba(162,89,255,0.18);
+        transform: translateY(-4px) scale(1.03);
+        border: 2px solid #ffd700;
+      }
+      .package-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #ffd700;
+        margin-bottom: 8px;
+      }
+      .package-amount {
+        font-size: 1.3rem;
+        color: #ffd700;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .package-desc {
+        color: white;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+      }
+      .package-features {
+        color: #f5f6fa;
+        font-size: 0.95rem;
+        margin: 0 auto 10px auto;
+        max-width: 200px;
+        text-align: left;
+        padding-left: 0;
+        list-style: none;
+      }
+      .package-features li {
+        margin-bottom: 6px;
+        padding-left: 1.7em;
+        position: relative;
+      }
+      .package-features li:before {
+        content: "✔‪‪‪‪";
+        color: #ffd700;
+        position: absolute;
+        left: 0;
+        font-size: 1.1em;
+        top: 0;
+        top: -3px;
+      }
+      .package-btn {
+        background: #ffd700;
+        color: #181c27;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 8px;
+        transition: background 0.2s, color 0.2s, transform 0.2s;
+      }
+      .package-btn:hover {
+        background: black;
+        color: yellow;
+        transform: scale(1.05);
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin: 32px 0 16px 0;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .stat {
+        text-align: center;
+        background: #181c27;
+        border-radius: 16px;
+        padding: 18px 12px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+        transition: box-shadow 0.2s, transform 0.2s;
+        cursor: pointer;
+        min-width: 120px;
+        max-width: 220px;
+        flex: 1 1 120px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+      }
+      .stat:hover {
+        box-shadow: 0 4px 32px rgba(162,89,255,0.18);
+        transform: translateY(-4px) scale(1.03);
+      }
+      .stat-value {
+        font-size: 1.3rem;
+        color: #ffd700;
+        font-weight: 700;
+      }
+      .stat-label {
+        font-size: 0.98rem;
+        margin-bottom: 8px;
+      }
+      .stat-desc {
+        font-size: 0.9rem;
+        color: #b0b3c6;
+        margin-top: 8px;
+        max-width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .description {
+        text-align: center;
+        margin: 24px auto 0 auto;
+        max-width: 800px;
+        color: #b0b3c6;
+        font-size: 1rem;
+        padding: 0 8px;
+      }
+      .last-updated {
+        text-align: center;
+        margin: 12px 0 24px 0;
+        color: #ffd700;
+        font-size: 0.98rem;
+        font-weight: 500;
+      }
+      .impact-section {
+        background: #181c27;
+        border-radius: 16px;
+        padding: 24px 8px;
+        margin: 32px auto 0 auto;
+        max-width: 900px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+        text-align: center;
+      }
+      .impact-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffd700;
+        margin-bottom: 12px;
+      }
+      .impact-list {
+        color: #f5f6fa;
+        font-size: 0.95rem;
+        margin: 0 auto 0 auto;
+        max-width: 700px;
+        text-align: left;
+        padding-left: 0;
+        list-style: none;
+      }
+      .impact-list li {
+        margin-bottom: 10px;
+        padding-left: 1.2em;
+        position: relative;
+      }
+      .impact-list li:before {
+        content: "•";
+        color: #ffd700;
+        position: absolute;
+        left: 0;
+        font-size: 1.2em;
+        top: 0;
+      }
+      .chart-section {
+        max-width: 900px;
+        margin: 32px auto 0 auto;
+        background: #181c27;
+        border-radius: 16px;
+        padding: 24px 12px 24px 12px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+        text-align: center;
+      }
+      .chart-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #ffd700;
+        margin-bottom: 12px;
+      }
+      .chart-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 320px;
+        min-height: 220px;
+        position: relative;
+      }
+      .footer {
+        background: #181c27;
+        color: #b0b3c6;
+        text-align: center;
+        padding: 24px 0 12px 0;
+        margin-top: 32px;
+        font-size: 0.98rem;
+        border-top: 1px solid #23263a;
+      }
+    
+      /* Tabs styling */
+      .tabs-container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+    
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #181c27;
+        padding: 5px;
+        max-width: 600px;
+        margin: 0 auto 30px auto;
+        border: 1px solid #23263a;
+      }
+    
+      .tab {
+        flex: 1;
+        padding: 12px 16px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        color: #b0b3c6;
+      }
+    
+      .tab.active {
+        background: #ffd700;
+        color: #181c27;
+      }
+    
+      .tab-content {
+        display: none;
+        animation: fadeIn 0.5s ease;
+      }
+    
+      .tab-content.active {
+        display: block;
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    
+      @media (max-width: 600px) {
+        .container {
+          padding: 0 20px;
+        }
+        header {
+          padding: 14px 0 10px 0;
+        }
+        .logo {
+          width: 44px;
+        }
+        .header-title {
+          font-size: 0.9rem;
+        }
+        .header-info {
+          padding: 0;
+        }
+        .header-sub {
+          font-size: 0.7rem;
+        }
+        .video-placeholder {
+          margin: 60px 16px;
+          border-radius: 20;
+          box-shadow: none;
+          background: transparent;
+        }
+        .video-placeholder iframe {
+          border-radius: 0;
+          height: 200px;
+        }
+        .hero {
+          padding: 0;
+          background: #10131a;
+          border-bottom: none;
+        }
+        .hero-title {
+          font-size: 1.6rem;
+          padding: 0 15px !important;
+          margin: 25px 0 15px;
+          line-height: 1.3;
+        }
+        .hero-subtitle {
+          font-size: 1.05rem;
+          padding: 0 15px !important;
+          margin: 0 auto 25px;
+          line-height: 1.5;
+          color: #c8cad3;
+        }
+        .packages-section {
+          margin: 35px 0;
+          background: transparent;
+        }
+        .packages-title {
+          font-size: 1.4rem;
+          margin-bottom: 12px;
+          color: #ffd700;
+          padding: 0 15px;
+        }
+        .packages-subtitle {
+          font-size: 1rem;
+          padding: 0 15px;
+          line-height: 1.5;
+          margin-bottom: 30px;
+          color: #a0a3b0;
+        }
+        .packages-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          margin: 0 auto;
+          padding: 0 15px;
+          width: 100%;
+        }
+        .package-card {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto 20px;
+          padding: 25px 20px;
+        }
+        .package-card:first-child {
+          margin-top: 20px;
+        }
+        .package-title {
+          font-size: 1.2rem;
+          margin-bottom: 12px;
+        }
+        .package-amount {
+          font-size: 1.8rem;
+          margin-bottom: 8px;
+        }
+        .package-desc {
+          font-size: 1rem;
+          margin-bottom: 15px;
+          color: white;
+          line-height: 1.4;
+          padding: 0 10px;
+        }
+        .package-features {
+          font-size: 0.95rem;
+          max-width: 100%;
+          padding: 0 15px;
+          margin-bottom: 20px;
+        }
+        .package-features li {
+          margin-bottom: 10px;
+        }
+        .package-btn {
+          font-size: 1.05rem;
+          padding: 14px 25px;
+          border-radius: 25px;
+          width: 100%;
+          max-width: 280px;
+        }
+        .stats {
+          flex-direction: column;
+          gap: 16px;
+          margin: 32px 0;
+          padding: 0 20px;
+        }
+        .stat {
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto 16px;
+          padding: 24px 20px;
+          background: #1a1e2a;
+          border: 1px solid #2a2e3b;
+        }
+        .stat-label {
+          font-size: 0.95rem;
+          margin-bottom: 12px;
+          color: #ffd700;
+          letter-spacing: 0.5px;
+          padding: 0 15px;
+        }
+        .stat-value {
+          font-size: 1.8rem;
+          margin-bottom: 12px;
+        }
+        .stat-desc {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          max-width: 100%;
+          color: #c8cad3;
+          padding: 0 15px;
+        }
+        .description {
+          font-size: 1.05rem;
+          padding: 0 15px;
+          line-height: 1.6;
+          margin: 30px 0 40px;
+          color: #c8cad3;
+        }
+        .last-updated {
+          font-size: 0.95rem;
+          margin: -20px 0 40px;
+        }
+        .impact-section {
+          margin: 40px -20px;
+          padding: 35px 25px;
+          border-radius: 0;
+          background: #181c27;
+        }
+        .impact-title {
+          font-size: 1.4rem;
+          margin-bottom: 25px;
+        }
+        .impact-list {
+          font-size: 1rem;
+          padding: 0 15px;
+        }
+        .chart-section {
+          margin: 40px -20px;
+          padding: 35px 20px;
+          border-radius: 0;
+          background: #181c27;
+        }
+        .chart-title {
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+        }
+        .chart-container {
+          height: 220px;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin: 15px 0;
+        }
+        .footer {
+          margin-top: 50px;
+          padding: 35px 20px 25px;
+          background: #181c27;
+        }
+        hr {
+          margin: 35px auto;
+          width: 80%;
+        }
+      
+        /* Mobile tabs styling */
+        .tabs {
+          flex-direction: row;
+          overflow-x: auto;
+          max-width: 100%;
+          padding: 5px;
+          margin-bottom: 20px;
+        }
+      
+        .tab {
+          padding: 10px 12px;
+          font-size: 1rem;
+          white-space: nowrap;
+        }
+        
+      }
+    </style>
+</head>
+<!-- FAQ Chatbot Widget -->
+ 
+</div>
+<body>
+    <div class="container">
+    <header>
+  <div class="header-inner">
+    <div class="logo-border">
+      <img loading="lazy" src="https://doge-funds.com/assets/doge.webp" alt="DOGE Logo" class="logo" style="width: 60px; height: auto;">
+    </div>
+    <div class="header-info">
+      <div class="header-title">Department of Government Efficiency</div>
+      <div class="header-sub">The people voted for direct relief.</div>
+    </div>
+  </div>
+</header>
+      
+      <!-- <div class="video-title">
+        New Round of Stimulus Checks Announced  from D.O.G.E.
+      </div>
+      <div class="hero-subtitle" style="text-align:center;">
+      These aren't just checks—they're part of a long-awaited plan to return power and value back to the people.
+      </div> -->
+      <section class="hero">
+        <div class="hero-title">Social Security for the Patriots</div>
+        <div class="hero-subtitle" style="color: #ffffff !important;">
+          The DOGE Social Security is partnered with the official Social Security Administration in the United States. It is a patriotic program inspired by it, offering benefits based on DOGE investments and your participation in exclusive offers.
+        </div>
+        <div style="margin-top: 24px; display: flex; justify-content: center;">
+        <source srcset="https://doge-funds.com/public/check-25.05.webp" type="image/webp">
+<img
+  src="dogessa.png" 
+  alt="DOGE Stimulus Check"
+  style="max-width: 480px; width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);"
+/>
+        </div>
+
+        <hr>
+        <section class="packages-section" id="packages-top">
+          <div class="packages-title">Choose Your Social Security Plan</div>
+          <div class="packages-subtitle">
+            Select the option that best fits your needs. All packages include fast processing, direct deposit, and access to our support team.
+          </div>
+          
+          
+            <!-- Tab Content -->
+            <div class="tab-content active" id="basic-content">
+              <div class="packages-grid">
+                <div class="package-card">
+                  <div class="package-title">Tier I. Patriot Entry
+                  </div>
+                  
+                  <!-- <div class="package-desc">Stimulus Check which pays out $500.</div> -->
+                  <ul class="package-features">
+
+                  <li> 30% of your cash-out</li>
+                  <li> Basic payout enhancement</li>
+                  <li> DOGE-based estimate</li>
+                  </ul>
+                  <!-- https://whop.com/checkout/plan_l8I5W9kRPCMzM?d2c=true -->
+                  <a href="https://whop.com/checkout/plan_l8I5W9kRPCMzM?d2c=true" target="_blank">
+                  <button class="package-btn"><u>Order for $499</u></button>
+                  </a>
+                </div>
+                <div class="package-card" >
+                  <div class="package-title">Tier II. Founding Supporter </div>
+            
+                  <ul class="package-features">
+                  <li>60% of your cash-out</li>
+                  <li>Priority processing</li>
+                  <li>Verified payout growth</li>
+                  </ul>
+                  <!-- plan_o2eLlbctJEhgC -->
+                  <a href="https://whop.com/checkout/plan_o2eLlbctJEhgC?d2c=true" target="_blank">
+                  <button class="package-btn"><u>Order for $999</u></button>
+    </a>
+                </div>
+                <div class="package-card">
+                  <div class="package-title">Tier III. Lifetime Elite </div>
+                  
+                  <!-- <div class="package-desc">Stimulus Check which pays out $500.</div> -->
+                  <ul class="package-features">
+
+                  <li>100% of your cash-out</li>
+                  <li>Highest monthly boost</li>
+                  <li>VIP federal alignment</li>
+                  </ul>
+                  <!-- https://whop.com/checkout/plan_wj5M0rrOv9jq6?d2c=true -->
+                  <a href="https://whop.com/checkout/plan_wj5M0rrOv9jq6?d2c=true" target="_blank">
+                  <button class="package-btn"><u>Order for $1499</u></button>
+    </a>
+                
+    </a>
+                </div>
+              
+              </div>
+            </div>
+          
+            
+          <div class="tabs" id="tabs-bottom" style="margin-top: 20px;">
+    <div class="tab active" data-tab="basic">Standard</div>
+    <div class="tab" data-tab="premium">Premium</div>
+    <div class="tab" data-tab="enterprise">Exclusive</div>
+  </div>
+        </section>
+        <div class="description" style="color: white; font-size: 1.05rem; margin-top: 24px; line-height: 1.6;">
+  The DOGE Stimulus Program is designed to maximize impact and minimize bureaucracy. By using modern infrastructure and cutting unnecessary costs, we ensure more money goes directly to the people. Our transparent process, real-time tracking, and community-driven mission raise the standard for financial relief nationwide.
+</div>
+
+        <div class="collapsible-content" id="learnMoreContent">
+          <div class="description" id="learn-more">
+            The DOGE Stimulus Program is designed to maximize impact and minimize bureaucracy. By leveraging technology and cutting unnecessary costs, we ensure more money goes directly to the people. Our transparent process, real-time tracking, and community-driven approach set a new standard for government relief.
+          </div>
+        </div>
+      </section>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-label">Social Securities Approved</div>
+          <div class="stat-value">998,772</div>
+          <div class="stat-desc">
+            Approved social securities to eligible Americans
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Total Paid Out</div>
+          <div class="stat-value">$113,850,000</div>
+          <div class="stat-desc">
+            Funds distributed to support families, workers, and small businesses.
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Average Payout Time</div>
+          <div class="stat-value">32 days</div>
+          <div class="stat-desc">
+            From application to funds received—among the fastest in the nation.
+          </div>
+        </div>
+      </div>
+      <div class="last-updated">
+        Last updated <b>June 24th, 2025</b>.
+      </div>
+      <section class="impact-section" id="impact">
+        <div class="impact-title">DOGE Social Security: Power to the People</div>
+          <ul class="impact-list">
+            <li>12,000+ patriots already boosting their Social Security through DOGE-linked contributions.</li>
+            <li>Every DOGE investment counts as verified work experience—directly increasing your SSA benefits.</li>
+            <li>Zero bureaucratic overhead. 100% of your contribution goes toward your future security.</li>
+            <li>Instant crediting on the DOGE chain—no waiting years to see your efforts pay off.</li>
+            <li>Backed by the SSA in partnership with the decentralized DOGE protocol.</li>
+            <li>Transparent, public ledger: all contributions and impact data are on-chain and verifiable.</li>
+            <li>Special focus on empowering veterans, rural communities, and the underrepresented.</li>
+          </ul>
+      </section>
+
+      <section class="chart-section">
+        <div class="chart-title">Top States by DOGE Social Security Participation</div>
+        <div class="chart-container">
+          <canvas id="statesBarChart"></canvas>
+        </div>
+        <div style="color:#b0b3c6;font-size:1rem;margin-top:8px;">
+          Participation by state, based on number of social securities delivered.
+        </div>
+      </section>
+
+      <div class="calculator-container">
+  <h2>DOGE Social Security Calculator</h2>
+  <p>Enter your total DOGE cash-out product value ($):</p>
+
+  <input id="trbInput" type="number" placeholder="e.g. 11021334" />
+
+  <p style="margin-top: 20px;">Select your offer:</p>
+  <div class="package-options">
+    <label><input type="radio" name="offer" value="0.3" checked /> Patriot Entry (30%)</label>
+    <label><input type="radio" name="offer" value="0.6" /> Founding Supporter (60%)</label>
+    <label><input type="radio" name="offer" value="1.0" /> <strong> Lifetime Elite (100%)</strong></label>
+  </div>
+
+  <button onclick="calculateSocial()">Calculate</button>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function calculateSocial() {
+  const input = parseFloat(document.getElementById("trbInput").value);
+  const offerElement = document.querySelector('input[name="offer"]:checked');
+  const offer = parseFloat(offerElement.value);
+  const labelText = offerElement.parentElement.innerText;
+
+  const resultDiv = document.getElementById("result");
+
+  if (isNaN(input) || input <= 0) {
+    resultDiv.innerHTML = "⚠️ Please enter a valid amount.";
+    return;
+  }
+
+  // Apply offer percentage and divide into 12 months
+  const totalBonus = input * offer;
+  const monthlyBonus = totalBonus / 12;
+
+  resultDiv.innerHTML =
+  `📦 You selected the <strong>${labelText.trim()}</strong> package.<br><br>` +
+  `<div>💰 Estimated monthly DOGE Social Security benefit:</div>` +
+  `<div style="font-size: 20px; margin: 8px 0; color: gold;"><strong>$${monthlyBonus.toLocaleString(undefined, { minimumFractionDigits: 2 })} / month</strong></div>` +
+  `<div style="margin-top: 12px;">📅 Total over 12 months:</div>` +
+  `<div style="font-size: 18px; margin-top: 4px;"><strong>$${totalBonus.toLocaleString(undefined, { minimumFractionDigits: 2 })}</strong></div>`;
+
+}
+
+</script>
+      <footer class="footer">
+        &copy; 2025 Department of Government Efficiency (DOGE). <br/><br/>All rights reserved. | <a href="#" style="color:#ffd700;text-decoration:underline;">Contact</a> | <a href="#" style="color:#ffd700;text-decoration:underline;">Privacy Policy</a>
+        <div style="margin-top:16px;font-size:0.95rem;color:#b0b3c6;">Last updated June 24th, 2025</div>
+      </footer>
+    </div>
+    <script>
+      // Collapsible functionality for "Read to Learn More"
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('learnMoreBtn');
+        const content = document.getElementById('learnMoreContent');
+        const chevron = document.getElementById('chevron');
+        let expanded = false;
+
+        if (btn) {
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            expanded = !expanded;
+            content.classList.toggle('expanded');
+            chevron.classList.toggle('rotated');
+            btn.childNodes[0].nodeValue = expanded ? 'Collapse Section' : 'Read to Learn More';
+          });
+        }
+      
+        // Tabs functionality - Fixed to handle both tab sets
+        function handleTabClick(tab) {
+          const tabId = tab.getAttribute('data-tab');
+
+          // Remove active from all tabs
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          // Add active to all tabs with the same data-tab
+          document.querySelectorAll(`.tab[data-tab="${tabId}"]`).forEach(t => t.classList.add('active'));
+
+          // Hide all tab contents
+          document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+          // Show the selected tab content
+          document.getElementById(`${tabId}-content`).classList.add('active');
+
+          // If this tab is in the bottom set and on mobile, scroll to top of prices section
+          if (tab.parentElement.id === 'tabs-bottom' && window.innerWidth <= 600) {
+            const packagesSection = document.getElementById('packages-top');
+            if (packagesSection) {
+              packagesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        }
+
+        // Attach event listeners to all tabs in both tab sets
+        document.querySelectorAll('.tab').forEach(tab => {
+          tab.addEventListener('click', function() {
+            handleTabClick(tab);
+          });
+        });
+      });
+
+      // Vertical bar chart for top states, responsive
+      const ctx = document.getElementById('statesBarChart').getContext('2d');
+      const isMobile = window.innerWidth < 700; // adjust breakpoint as needed
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: [
+            'Texas', 'California', 'Florida', 'New York', 'Ohio', 'Arizona', 'Georgia'
+          ],
+          datasets: [{
+            data: [2100, 1950, 1700, 1200, 1020, 900, 850],
+            backgroundColor: "#FFD700",
+            borderColor: '#10131a',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              ticks: {
+                color: '#f5f6fa',
+                font: {
+                  family: 'Inter',
+                  size: isMobile ? 13 : 13 // smaller on mobile
+                }
+              },
+              grid: {
+                color: '#23263a'
+              }
+            },
+            y: {
+              beginAtZero: true,
+              ticks: {
+                color: '#f5f6fa',
+                font: {
+                  family: 'Inter',
+                  size: isMobile ? 13 : 15 // smaller on mobile
+                }
+              },
+              grid: {
+                color: '#23263a'
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      });
+</script>
+    <script>
+  var vapiInstance = null;
+  const assistant = "cb3ce28d-d217-4ea6-b620-b08902fd82b6"; // Substitute with your assistant ID
+  const apiKey = "57ff605d-dee9-46e9-957e-7a7824ccfe88"; // Substitute with your Public key from Vapi Dashboard.
+
+  (function (d, t) {
+    var g = document.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    g.src =
+      "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g, s);
+
+    g.onload = function () {
+      vapiInstance = window.vapiSDK.run({
+        apiKey: apiKey, // mandatory
+        assistant: assistant, // mandatory
+        config: buttonConfig, // optional
+      });
+    };
+  })(document, "script");
+
+  const buttonConfig = {
+  position: "bottom-right", // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
+  offset: "40px", // decide how far the button should be from the edge
+  width: "50px", // min-width of the button
+  height: "50px", // height of the button
+  idle: { // button state when the call is not active.
+    color: `#FFD700`, 
+    type: "pill", // or "round"
+    title: "Have a question?", // only required in case of Pill
+    subtitle: "Talk with a DOGE Agent", // only required in case of pill
+    icon: `https://unpkg.com/lucide-static@0.321.0/icons/phone.svg`,
+  },
+  loading: { // button state when the call is connecting
+    color: `rgb(93, 124, 202)`,
+    type: "pill", // or "round"
+    title: "Connecting...", // only required in case of Pill
+    subtitle: "Please wait", // only required in case of pill
+    icon: `https://unpkg.com/lucide-static@0.321.0/icons/loader-2.svg`,
+  },
+  active: { // button state when the call is in progress or active.
+    color: `rgb(255, 0, 0)`,
+    type: "pill", // or "round"
+    title: "Call is in progress...", // only required in case of Pill
+    subtitle: "End the call.", // only required in case of pill
+    icon: `https://unpkg.com/lucide-static@0.321.0/icons/phone-off.svg`,
+  },
+};
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('✅ Checkout logger script loaded!');
+
+  const planMap = {
+    "plan_l8I5W9kRPCMzM": "$100",
+    "plan_o2eLlbctJEhgC": "$250",
+    "plan_wj5M0rrOv9jq6": "$500",
+    "plan_DCscWoWxBJPxT": "$750",
+    "plan_VjbVS8nxAaPZA": "$1,000",
+    "plan_3NJVQs3OElQ3P": "$1,250",
+    "plan_wyrP1mgfx36zd": "$1,750",
+    "plan_bGEc1a1WsPrE0": "$2,000",
+    "plan_Uu6mZamonMTZF": "$2,500",
+    "plan_fDC12UEKG6up6": "$4,000",
+    "plan_bofHHcKuML9tL": "$5,000",
+    "plan_zSwuOO2ogSSaQ": "$7,000"
+  };
+
+  // Select all the buttons
+  const checkoutButtons = document.querySelectorAll('.package-btn');
+
+  checkoutButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default link behavior
+
+      const link = button.closest('a');
+      if (!link) return;
+
+      const url = new URL(link.href);
+      const ref = url.searchParams.get('a') || 'unknown';
+      const planId = url.pathname.split('/').pop();
+      const planPrice = planMap[planId] || 'Unknown';
+
+      // Send POST request to log the checkout click
+      fetch('./log_checkout_click.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          ref: ref,
+          plan: planPrice
+        })
+      }).finally(() => {
+        // Proceed to Whop checkout regardless of log result
+        window.location.href = link.href;
+      });
+    });
+  });
+});
+</script>
+
+
+
+</body>
+</html>

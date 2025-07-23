@@ -1,0 +1,36 @@
+<vapi-widget
+  public-key="76a6b3a5-e73d-4e19-9122-411d3586ad97"
+  assistant-id="50932051-0f85-4958-ac61-4e26346ed526"
+  mode="voice"
+  theme="dark"
+  base-bg-color="#000000"
+  accent-color="#14B8A6"
+  cta-button-color="#000000"
+  cta-button-text-color="#ffffff"
+  border-radius="medium"
+  size="compact"
+  position="bottom-right"
+  title="TALK WITH AGENT"
+  start-button-text="Start"
+  end-button-text="End Call"
+  chat-first-message="Hey, How can I help you today?"
+  chat-placeholder="Type your message..."
+  voice-show-transcript="false"
+  consent-required="false"
+  auto-listen="true"
+></vapi-widget>
+
+<script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+
+<script>
+  window.addEventListener('vapi-widget-ready', () => {
+    const widget = document.querySelector('vapi-widget');
+    if (!widget) return;
+
+    widget.addEventListener('vapi-response-ended', () => {
+      if (widget.startListening) {
+        widget.startListening();
+      }
+    });
+  });
+</script>
